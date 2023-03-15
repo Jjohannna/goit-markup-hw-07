@@ -645,7 +645,7 @@ img {
   }
 }
 
-.team {
+.section.team {
   background-color: var(--secondary-background-color);
 }
 
@@ -717,10 +717,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .team-list {
-  }
-}
 .team-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -1126,12 +1122,6 @@ img {
   gap: 24px;
   justify-content: center;
 }
-
-/* @media screen and (min-width: 768px) {
-  .socials-list {
-    justify-content: center;
-  }
-} */
 
 .socials-item {
   width: 40px;
