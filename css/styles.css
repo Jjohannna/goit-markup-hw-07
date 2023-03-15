@@ -93,7 +93,13 @@ img {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 120px 0;
+  }
 }
 
 .link {
@@ -559,7 +565,8 @@ img {
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72;
   }
 }
 
@@ -717,7 +724,7 @@ img {
 .team-subtitle {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2px;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -1039,7 +1046,7 @@ img {
   flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-container {
     width: 500px;
   }
@@ -1150,8 +1157,15 @@ img {
 
 /* ==============CUSTOMERS SECTION =====================*/
 .customers-section {
-  padding-top: 130px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .customers-list {
