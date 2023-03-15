@@ -263,7 +263,7 @@ img {
 /* ==================MOBILE MENU=================== */
 
 .mobile-menu-open__icon {
-  stroke: #2e2f42;
+  stroke: var(--primary-color);
 }
 
 .mobile-menu-open {
@@ -285,6 +285,7 @@ img {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  z-index: 900;
   top: 0;
   left: 0;
   padding-top: 80px;
