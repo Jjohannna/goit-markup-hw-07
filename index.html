@@ -58,6 +58,8 @@
           </ul>
         </address>
 
+        <!-- MOBILE MENU -->
+
         <button type="button" class="mobile-menu-open js-open-menu">
           <svg class="mobile-menu-open__icon" width="32" height="32">
             <use href="./images/icons.svg#icon-burger"></use>
@@ -204,7 +206,11 @@
           <ul class="list services">
             <li>
               <img
-                src="./images/desktop/img1.jpg"
+                srcset="
+                  ./images/desktop/desktop-1x.jpg 1x,
+                  ./images/desktop/desktop@2x.jpg 2x
+                "
+                src="./images/desktop/desktop-1x.jpg"
                 alt="img"
                 width="360"
                 height="300"
@@ -212,7 +218,11 @@
             </li>
             <li>
               <img
-                src="./images/desktop/img2.jpg"
+                srcset="
+                  ./images/desktop/smartphone@2x.jpg 2x,
+                  ./images/desktop/smartphone-1x.jpg 1x
+                "
+                src="./images/desktop/smartphone-1x.jpg"
                 alt="img"
                 width="360"
                 height="300"
@@ -220,7 +230,11 @@
             </li>
             <li>
               <img
-                src="./images/desktop/img3.jpg"
+                srcset="
+                  ./images/desktop/laptop-1x.jpg 1x,
+                  ./images/desktop/laptop@2x.jpg 2x
+                "
+                src="./images/desktop/laptop-1x.jpg"
                 alt="img"
                 width="360"
                 height="300"
@@ -237,37 +251,18 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="list team-faces">
             <li class="team-list">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desktop/mark-desktop-1x.jpg 1x,
-                    ./images/desktop/mark-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  srcset="
-                    ./images/tablet/mark-tablet-1x.jpg 1x,
-                    ./images/tablet/mark-tablet@2x.jpg 2x
-                  "
-                />
-                <source
-                  srcset="
-                    ./images/mobile/mark-mobile-1x.jpg 1x,
-                    ./images/mobile/mark-mobile@2x.jpg 2x
-                  "
-                />
+              <img
+                srcset="./images/mark-1x.jpg 1x, ./images/mark@2x.jpg 2x"
+                class="image"
+                src="./images/mark-1x.jpg"
+                alt="Mark Guerrero"
+                width="264"
+                height="260"
+              />
 
-                <img
-                  class="image"
-                  src="./images/mobile/mark-mobile-1x.jpg"
-                  alt="Mark Guerrero"
-                  width="264"
-                  height="260"
-                />
-              </picture>
               <h3 class="section-subtitle team-subtitle">Mark Guerrero</h3>
               <p class="section-text team-text">Product Designer</p>
-              <ul class="socials-list list">
+              <ul class="socials-list list team">
                 <li class="socials-item">
                   <a class="socials-link" href="#">
                     <svg class="socials-icon" width="16" height="16">
@@ -300,33 +295,15 @@
             </li>
 
             <li class="team-list">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desktop/tom-desktop-1x.jpg 1x,
-                    ./images/desktop/tom-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  srcset="
-                    ./images/tablet/tom-tablet-1x.jpg 1x,
-                    ./images/tablet/tom-tablet@2x.jpg 2x
-                  "
-                />
-                <source
-                  srcset="
-                    ./images/mobile/tom-mobile-1x.jpg 1x,
-                    ./images/mobile/tom-mobile@2x.jpg 2x
-                  "
-                />
-                <img
-                  class="image"
-                  src="./images/mobile/tom-mobile-1x.jpg"
-                  alt="Tom Ford"
-                  width="264"
-                  height="260"
-                />
-              </picture>
+              <img
+                srcset="./images/tom-1x.jpg 1x, ./images/tom@2x.jpg 2x"
+                class="image"
+                src="./images/tom-1x.jpg"
+                alt="Tom Ford"
+                width="264"
+                height="260"
+              />
+
               <h3 class="section-subtitle team-subtitle">Tom Ford</h3>
               <p class="section-text team-text">Frontend Developer</p>
               <ul class="socials-list list">
@@ -362,33 +339,15 @@
             </li>
 
             <li class="team-list">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desktop/camila-desktop-1x.jpg 1x,
-                    ./images/desktop/camila-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  srcset="
-                    ./images/tablet/camila-tablet-1x.jpg 1x,
-                    ./images/tablet/camila-tablet@2x.jpg 2x
-                  "
-                />
-                <source
-                  srcset="
-                    ./images/mobile/camila-mobile-1x.jpg 1x,
-                    ./images/mobile/camila-mobile@2x.jpg 2x
-                  "
-                />
-                <img
-                  class="image"
-                  src="./images/mobile/camila-mobile-1x.jpg"
-                  alt="Camila Garcia"
-                  width="264"
-                  height="260"
-                />
-              </picture>
+              <img
+                srcset="./images/camila-1x.jpg 1x, ./images/camila@2x.jpg 2x"
+                class="image"
+                src="./images/camila-1x.jpg"
+                alt="Camila Garcia"
+                width="264"
+                height="260"
+              />
+
               <h3 class="section-subtitle team-subtitle">Camila Garcia</h3>
               <p class="section-text team-text">Marketing</p>
               <ul class="socials-list list">
@@ -424,34 +383,15 @@
             </li>
 
             <li class="team-list">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desktop/daniel-desktop-1x.jpg 1x,
-                    ./images/desktop/daniel-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  srcset="
-                    ./images/tablet/daniel-tablet-1x.jpg 1x,
-                    ./images/tablet/daniel-tablet@2x.jpg 2x
-                  "
-                />
-                <source
-                  srcset="
-                    ./images/mobile/daniel-mobile-1x.jpg 1x,
-                    ./images/mobile/daniel-mobile@2x.jpg 2x
-                  "
-                />
+              <img
+                srcset="./images/daniel-1x.jpg 1x, ./images/daniel@2x.jpg 2x"
+                class="image"
+                src="./images/daniel-1x.jpg"
+                alt="Daniel Wilson"
+                width="264"
+                height="260"
+              />
 
-                <img
-                  class="image"
-                  src="./images/mobile/daniel-mobile-1x.jpg"
-                  alt="Daniel Wilson"
-                  width="264"
-                  height="260"
-                />
-              </picture>
               <h3 class="section-subtitle team-subtitle">Daniel Wilson</h3>
               <p class="section-text team-text">UI Designer</p>
               <ul class="socials-list list">
