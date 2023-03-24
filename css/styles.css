@@ -456,7 +456,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/tablet/hero-bg-tablet-1x.jpg);
-    max-width: 768px;
+    /* max-width: 1440px; */
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -565,8 +565,7 @@ img {
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 72;
+    gap: 72px 24px;
   }
 }
 
@@ -578,8 +577,10 @@ img {
   }
 }
 
-.benefits-item:not(:last-child) {
-  margin-bottom: 72px;
+@media screen and (max-width: 767px) {
+  .benefits-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -593,6 +594,10 @@ img {
 @media screen and (min-width: 1200px) {
   .benefits-item {
     flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .benefits-item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
